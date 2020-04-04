@@ -26,5 +26,8 @@ def somar_visualizacoes(fname):
       canais[ sigla ][ dia ] += mins
   return canais
 
-pp = PrettyPrinter(indent=2)
-pp.pprint(somar_visualizacoes("visualizacoes.txt"))
+def main():
+  pp = PrettyPrinter(indent=2)
+  pp.pprint(somar_visualizacoes("visualizacoes.txt"))
+
+main()
