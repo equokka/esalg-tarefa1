@@ -18,12 +18,10 @@ def somar_visualizacoes(fname):
       # https://docs.python.org/3/library/stdtypes.html#dict.setdefault
       # https://stackoverflow.com/a/12906014/12086004
       # isto cria o canal se não existir já
-      canais.setdefault(sigla, {
-        1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0,
-      })
+      canais.setdefault(sigla, [])
 
-      # adicionamos os minutos de visualização ao dia da semana correto
-      canais[ sigla ][ dia ] += mins
+      # adicionamos a visualizacao
+      canais[ sigla ].append({ "dia": dia, "tempo": mins })
   return canais
 
 def main():

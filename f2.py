@@ -3,8 +3,11 @@ from f1 import somar_visualizacoes
 from random import choice as rchoice
 
 def canal_visto(canais, sigla):
-  for k in canais[sigla].keys():
-    if (canais[sigla][k] > 0): return True
+  # if (sigla in canais): return True
+
+  # "sequencial"
+  for c in canais.keys():
+    if (c == sigla): return True
   return False
 
 gen() # novos canais
