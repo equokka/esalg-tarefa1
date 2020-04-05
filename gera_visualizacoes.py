@@ -21,4 +21,4 @@ def gerar_fich_visualizacoes(num_visualizacoes, fname):
 def main():
   gerar_fich_visualizacoes(100, "visualizacoes.txt")
 
-main()
+# main()

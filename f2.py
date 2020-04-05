@@ -10,8 +10,10 @@ def canal_visto(canais, sigla):
     if (c == sigla): return True
   return False
 
-gen() # novos canais
-vis = somar_visualizacoes("visualizacoes.txt")
-canal = rchoice(list(vis.keys())) # canal à sorte
+def main():
+  gen() # novos canais
+  vis = somar_visualizacoes("visualizacoes.txt")
+  canal = rchoice(list(vis.keys())) # canal à sorte
+  print(canal_visto(vis, canal))
 
-print(canal_visto(vis, canal))
+# main()

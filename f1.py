@@ -28,4 +28,4 @@ def main():
   pp = PrettyPrinter(indent=2)
   pp.pprint(somar_visualizacoes("visualizacoes.txt"))
 
-main()
+# main()
