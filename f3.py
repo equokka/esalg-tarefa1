@@ -9,6 +9,10 @@ def main():
   gen() # novos canais
   vis = somar_visualizacoes("visualizacoes.txt")
 
+  pp = PrettyPrinter(indent=2)
+  pp.pprint(sort_canais(vis))
+
+def sort_canais(vis):
   # mete tudo numa lista em vez dum dicionario, para podermos ordenar
   ls = [{ "sigla": k, "vis": vis[k] } for k in vis.keys()]
 
@@ -20,8 +24,6 @@ def main():
       move -= 1
     ls[move + 1] = ls[index]
 
-  pp = PrettyPrinter(indent=2)
-  print("-" * 100)
-  pp.pprint(ls)
+  return ls
 
 # main()

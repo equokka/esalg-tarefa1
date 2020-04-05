@@ -1,4 +1,3 @@
-from pprint import PrettyPrinter
 from random import choice as rchoice
 from gera_visualizacoes import main as gen
 from f1 import somar_visualizacoes
