@@ -1,3 +1,6 @@
+# F4 - Mostrar as visualizações de um determinado canal da smart TV num
+# determinado dia da semana (pesquisa o canal pela sigla)
+
 from random import choice as rchoice
 from gera_visualizacoes import main as gen
 from f1 import somar_visualizacoes

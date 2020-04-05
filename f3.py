@@ -1,5 +1,5 @@
 # F3 - Mostrar a lista dos canais da smart TV, ordenada por ordem decrescente do
-#      número de visualizações pelo algoritmo insertion sort.
+# número de visualizações pelo algoritmo insertion sort.
 
 from gera_visualizacoes import main as gen
 from f1 import somar_visualizacoes

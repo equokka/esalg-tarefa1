@@ -1,3 +1,6 @@
+# F1 - Mostrar no ecrã as visualizações dos canais que estão guardadas no
+# ficheiro de texto.
+
 from pprint import PrettyPrinter
 
 def somar_visualizacoes(fname):

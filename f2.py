@@ -1,9 +1,12 @@
+# F2 - Pesquisar se determinado canal foi visto durante a semana, recorrendo a
+# um algoritmo de pesquisa sequencial.
+
 from gera_visualizacoes import main as gen
 from f1 import somar_visualizacoes
 from random import choice as rchoice
 
 def canal_visto(canais, sigla):
-  # if (sigla in canais): return True
+  # if sigla in canais: return True
 
   # "sequencial"
   for c in canais.keys():
